@@ -9,7 +9,7 @@ import de.robv.android.xposed.XposedHelpers;
  * 功能介绍: XpHook工具类 <br/>
  * 调用方式: / <br/>
  * <p/>
- * 创建作者: Svran - 924633827@qq.com<br/>
+ * 创建作者: Svran - ranliulian@gmail.com<br/>
  * 创建电脑: Svran-MY  <br/>
  * 创建时间: 2021/4/14 10:12 <br/>
  * 最后编辑: 2021/4/14 10:12 - Svran<br/>

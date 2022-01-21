@@ -14,7 +14,7 @@ import de.robv.android.xposed.callbacks.XC_LoadPackage;
  * 功能介绍:  <br/>
  * 调用方式: / <br/>
  * <p/>
- * 作   者: Svran - 924633827@qq.com <br/>
+ * 作   者: Svran - ranliulian@gmail.com <br/>
  * 创建电脑: Svran-MY  <br/>
  * 创建时间: 2020/11/19 15:40 <br/>
  * 最后编辑: 2020/11/19 - Svran
@@ -41,10 +41,10 @@ public class Aod {
 //        }
         if (textView != null) {
             Calendar c = Calendar.getInstance(TimeZone.getDefault());
-            String hour = c.get(Calendar.HOUR_OF_DAY) < 10 ? "0" + c.get(Calendar.HOUR_OF_DAY) : "" + c.get(Calendar.HOUR_OF_DAY);
+//            String hour = c.get(Calendar.HOUR_OF_DAY) < 10 ? "0" + c.get(Calendar.HOUR_OF_DAY) : "" + c.get(Calendar.HOUR_OF_DAY);
             String minute = c.get(Calendar.MINUTE) < 10 ? "0" + c.get(Calendar.MINUTE) : "" + c.get(Calendar.MINUTE);
             String second = c.get(Calendar.SECOND) < 10 ? "0" + c.get(Calendar.SECOND) : "" + c.get(Calendar.SECOND);
-            String time = hour + ":" + minute + ":" + second;
+            String time = c.get(Calendar.HOUR_OF_DAY) + ":" + minute + ":" + second;
             textView.setText(time);
             textView.postDelayed(() -> {
 //                if (sec >= 15) {
