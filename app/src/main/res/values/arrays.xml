@@ -1,0 +1,5 @@
+<resources>
+    <string-array name="xp_scope">
+        <item>com.miui.aod</item>
+    </string-array>
+</resources>
